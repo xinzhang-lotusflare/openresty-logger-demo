@@ -1,0 +1,40 @@
+➜  demo git:(master) ✗ wrk -c 200 -t 10 -d 60s http://localhost:8080
+Running 1m test @ http://localhost:8080
+  10 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    14.61ms    2.68ms  78.67ms   95.52%
+    Req/Sec     1.38k   117.28     1.56k    83.83%
+  825630 requests in 1.00m, 1.85GB read
+  Socket errors: connect 0, read 66, write 0, timeout 0
+Requests/sec:  13754.03
+Transfer/sec:     31.53MB
+➜  demo git:(master) ✗ wrk -c 200 -t 10 -d 60s http://localhost:8080
+Running 1m test @ http://localhost:8080
+  10 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    14.54ms    2.07ms  49.24ms   94.90%
+    Req/Sec     1.39k   100.01     1.70k    88.32%
+  827305 requests in 1.00m, 1.85GB read
+  Socket errors: connect 0, read 67, write 0, timeout 0
+Requests/sec:  13781.00
+Transfer/sec:     31.59MB
+➜  demo git:(master) ✗ wrk -c 200 -t 10 -d 60s http://localhost:8080
+Running 1m test @ http://localhost:8080
+  10 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    14.47ms    2.35ms  60.61ms   96.22%
+    Req/Sec     1.39k   103.52     1.62k    87.95%
+  832744 requests in 1.00m, 1.86GB read
+  Socket errors: connect 0, read 75, write 0, timeout 0
+Requests/sec:  13873.80
+Transfer/sec:     31.81MB
+➜  demo git:(master) ✗ wrk -c 200 -t 10 -d 60s http://localhost:8080
+Running 1m test @ http://localhost:8080
+  10 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    14.68ms    2.62ms  64.34ms   95.12%
+    Req/Sec     1.37k   115.19     1.55k    86.65%
+  820887 requests in 1.00m, 1.84GB read
+  Socket errors: connect 0, read 67, write 0, timeout 0
+Requests/sec:  13675.91
+Transfer/sec:     31.35MB
